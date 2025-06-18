@@ -71,3 +71,7 @@ Este proyecto está diseñado para ser utilizado con GitHub Actions. Puedes conf
 ## Licencia
 
 ISC 
+
+## Comentarios
+
+Se agrega comentario para estudiar pipeline en pull request.
