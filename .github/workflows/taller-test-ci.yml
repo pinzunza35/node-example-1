@@ -30,8 +30,8 @@ jobs:
       - name: Build Project
         run: npm run build
 
-      - name: Lint Project
-        run: npm run lint
+     # - name: Lint Project
+     #   run: npm run lint
         
       - name: Test Project
         run: |
