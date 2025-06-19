@@ -35,3 +35,13 @@ jobs:
           name: node-ejemplo
           path: dist/
           retention-days: 14
+  deploy:
+    name: dummy deploy
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: development
+      url: https://www.google.com
+    steps:
+      - name: imprimir variables entorno
+        run: echo "Secret var ${{secrets.secret1}}"
