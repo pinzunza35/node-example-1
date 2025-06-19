@@ -15,3 +15,4 @@ jobs:
         uses: pinzunza35/loteria-devops-resource/.github/actions/helpers/hello-world@main
         with:
           comentario: mensaje a imprimir desde template.
+          version: 16.x
