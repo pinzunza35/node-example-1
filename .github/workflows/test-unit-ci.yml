@@ -34,9 +34,9 @@ jobs:
         run: |
           npm run test
           npm run test:coverage
-       #- name: Upload build artifact
-        #uses: actions/upload-artifact@v4
-        #with:
-         # name: node-ejemplo
-          #path: dist/
-         # retention-days: 14
+      - name: Upload build artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: node-ejemplo-coverage
+          path: coverage/
+          retention-days: 14

@@ -1,0 +1,18 @@
+name: Usar un Template
+
+on:
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Usar template reutilizable
+        uses: pinzunza35/loteria-devops-resource/.github/actions/helpers/hello-world@main
+        with:
+          comentario: mensaje a imprimir desde template.
+          version: 16.x
